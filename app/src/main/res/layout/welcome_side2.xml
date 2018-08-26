@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="false"
+    android:background="@color/bg_screen2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <TextView
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="@string/slide_2_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_title"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="@string/slide_2_desc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_desc" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:inputType="textCapWords"
+                android:visibility="visible"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter your email ID"
+                android:inputType="textEmailAddress"
+                android:visibility="visible"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textView"
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="TOKEN (provided by your distributor)"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                tools:ignore="MissingPrefix" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/uidEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter your token"
+                android:inputType="text"
+                android:visibility="visible"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+            <TextView
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="ADDRESS"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                tools:ignore="MissingPrefix" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/firstAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Door No., Floor, Flat No."
+                android:inputType="textCapWords"
+                android:visibility="visible"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/secondAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Street Address"
+                android:inputType="textCapWords"
+                android:visibility="visible"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/thirdAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Area Address"
+                android:inputType="textCapWords"
+                android:visibility="visible"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

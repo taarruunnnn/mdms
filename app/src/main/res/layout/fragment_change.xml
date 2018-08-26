@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arun.newtru.ChangeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/dummyTextView"
+            fontPath="fonts/AkkRg_Pro_1.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:text="CHANGE"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/dummyTextView2"
+            fontPath="fonts/AkkRg_Pro_1.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="CHANGE"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            tools:ignore="MissingPrefix" />
+
+        <NumberPicker
+        android:id="@+id/npp"
+        fontPath="fonts/AkkRg_Pro_1.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingPrefix" />
+
+    <Button
+        fontPath="fonts/FF_DIN_Pro_Bold.otf"
+        android:id="@+id/updateValueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npp"
+        android:layout_centerHorizontal="true"
+        android:onClick="updateRequirement"
+        android:text="UPDATE"
+        tools:ignore="MissingPrefix" />
+    </LinearLayout>
+</RelativeLayout>

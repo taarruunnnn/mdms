@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DistributorActivity">
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_marginTop="60dp"
+        fontPath="fonts/FF_DIN_Pro_Bold.otf"
+        tools:ignore="MissingPrefix"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startMap"
+        android:text="Map"
+        android:textStyle="bold" />
+</RelativeLayout>

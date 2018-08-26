@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@color/colorPrimaryDark2">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab1"
+                android:icon="@drawable/tab_change_selector"
+                style="@style/tab_item"
+                android:text="UPDATE"
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab2"
+                android:icon="@drawable/tab_records_selector"
+                style="@style/tab_item"
+                android:text="RECORDS"
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab3"
+                android:icon="@drawable/tab_account_selector"
+                style="@style/tab_item"
+                android:text="ACCOUNT"
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"/>
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

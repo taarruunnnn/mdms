@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_screen3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <TextView
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="YOU'RE ALMOST THERE"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_title"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/textView"
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="CREDENTIALS"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                tools:ignore="MissingPrefix" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/passEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter your password"
+                app:met_minCharacters="8"
+                android:inputType="textPassword"
+                android:visibility="visible"
+                app:met_helperText="Password must be atleast 8 characters long"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/passConfirmEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Re-enter your password"
+                android:inputType="textPassword"
+                android:visibility="visible"
+                app:met_minCharacters="8"
+                app:met_helperText="Passwords must match"
+                app:met_errorColor="@android:color/holo_red_light"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelPadding="4sp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_textColor="@android:color/white" />
+
+            <TextView
+                fontPath="fonts/FF_DIN_Pro_Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DEFAULT MILK REQUIREMENTS"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Please enter the amoutn of milk you want by default. (This can however be changed everyday)"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_desc" />
+
+            <NumberPicker
+                android:id="@+id/np"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
